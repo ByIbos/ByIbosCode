@@ -185,13 +185,7 @@ function streamAnthropicResponse(res, anthropicResponse) {
       sendSSE(res, 'content_block_start', {
         type: 'content_block_start',
         index: blockIndex,
-        content_block: { type: 'tool_use', id: block.id, name: block.name, input: {} },
-      });
-
-      sendSSE(res, 'content_block_delta', {
-        type: 'content_block_delta',
-        index: blockIndex,
-        delta: { type: 'input_json_delta', partial_json: JSON.stringify(block.input) },
+        content_block: { type: 'tool_use', id: block.id, name: block.name, input: block.input },
       });
 
       sendSSE(res, 'content_block_stop', {
