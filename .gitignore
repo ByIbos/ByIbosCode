@@ -1,0 +1,6 @@
+node_modules/
+byibos_cli.js
+.ByIbosCode.json
+.ByIbosCode/
+.env
+.claude/
