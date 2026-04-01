@@ -243,7 +243,7 @@ function callLMStudio(payload) {
     });
 
     req.on('error', reject);
-    req.setTimeout(300000, () => reject(new Error('LM Studio timeout (5min)')));
+    req.setTimeout(0, () => {});
     req.write(body);
     req.end();
   });
