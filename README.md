@@ -65,4 +65,4 @@ A: LiteLLM is bulky and slow. ByIbos's adapter directly translates Claude's `Ser
 A: Yes! We do not display the original 12 MB `cli.js` code in our repository without permission (nor should you). We merely use the Node.JS FS utility to copy the file from your own native directory and perform memory-redirection modifications to derive `byibos_cli.js`! This is entirely DMCA friendly.
 
 ---
-> 🦾 Coded with love for open-source by ByIbo! Feel free to Fork!
+> 🦾 Coded with love for open-source by ByIbos Feel free to Fork!
